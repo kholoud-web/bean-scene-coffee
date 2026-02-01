@@ -25,7 +25,7 @@ export default function HeroSection() {
         id="home"
       >
         <div className="@container px-12">
-          <div className=" min-w-1/2 py-20 md:px-12 mt-10  sm:px-2">
+          <div className=" min-w-1/2 py-20 md:px-12 mt-10  sm:px-1">
             <h3 className="text-[#FFFFFF] font-medium">
               We’ve got your morning covered with
             </h3>
