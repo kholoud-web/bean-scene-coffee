@@ -1,7 +1,7 @@
-import badge from "./images/badge 1.svg";
-import bestPrice from "./images/best-price 1.svg";
-import coffeSeeds from "./images/coffee-beans 1.svg";
-import coffeUp from "./images/coffee-cup 1.svg";
+import badge from "../../assets/images/badge 1.svg";
+import bestPrice from "../../assets/images/best-price 1.svg";
+import coffeSeeds from "../../assets/images/coffee-beans 1.svg";
+import coffeUp from "../../assets/images/coffee-cup 1.svg";
 import { motion } from "framer-motion";
 
 const cards = [
@@ -32,11 +32,11 @@ export default function Features() {
     <motion.section
   initial={{ opacity: 0, y: 50 }}
   whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
+  transition={{ duration: 0.4 }}
   viewport={{ once: true }}
 >
     <section className="px-16" id="features">
-      <div className="@container px-12">
+      <div className=" px-12">
         <h2 className="text-amber-950 font-bold text-4xl text-center">
           Why are we different?
         </h2>
@@ -50,11 +50,12 @@ export default function Features() {
   lg:grid-cols-3 ">
           {cards.map((card) => {
             return (
-              <article class=" bg-[#FFEED8] shadow p-4 space-y-2 rounded-md hover:-translate-y-2 duration-300 text-center">
+              <article key={card.title} class=" bg-[#FFEED8] shadow p-4 space-y-2 rounded-md hover:-translate-y-2 duration-300 text-center">
                 <img
                   src={card.img}
                   alt={card.title}
                   className="mx-auto my-2"
+                  loading="lazy"
                 />
                 <h3 className="text-amber-950 font-bold text-center">
                   {card.title}

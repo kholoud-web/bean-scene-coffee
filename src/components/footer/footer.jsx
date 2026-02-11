@@ -1,5 +1,5 @@
-import footer from "./fotter_image.svg";
-import logo from './Bean Scene.svg'
+import footer from "../../assets/images/fotter_image.svg";
+import logo from '../../assets/images/Bean Scene.svg'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 
 export default function Footer() {

@@ -28,7 +28,7 @@ export default function TestimonialsSlider() {
     <motion.section
   initial={{ opacity: 0, y: 50 }}
   whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
+  transition={{ duration: 0.4 }}
   viewport={{ once: true }}
 >
     <section className=" px-16 py-20 " id='testimonials'>
@@ -45,8 +45,8 @@ export default function TestimonialsSlider() {
           loop
           className='mt-4'
         >
-          {testimonials.map((t, idx) => (
-            <SwiperSlide key={idx}>
+          {testimonials.map((t) => (
+            <SwiperSlide key={t.name}>
               <div className="flex flex-col items-center bg-[#F9C06A] p-8 rounded-xl shadow-md max-w-xl mx-auto">
                 <p className="text-gray-700 mb-4 text-center">"{t.text}"</p>
                 <h3 className="text-gray-900 font-semibold">{t.name}</h3>
